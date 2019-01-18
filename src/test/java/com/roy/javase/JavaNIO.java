@@ -16,9 +16,54 @@ public class JavaNIO {
 
     @SuppressWarnings("resource")
     public static void main(String[] args) {
-        readNIO();
-        writeNIO();
+        testChannelAndBuffer();
+
+//        readNIO();
+//        writeNIO();
         //testReadAndWriteNIO();
+    }
+
+    public static void testChannelAndBuffer(){
+        RandomAccessFile aFile = null;
+        try {
+            aFile = new RandomAccessFile("C:\\Users\\admin\\Desktop\\Netty权威指南 第2版.txt", "r");
+            FileChannel inChannel = aFile.getChannel();
+
+            //分配buffer大小
+            ByteBuffer byteBuffer = ByteBuffer.allocate(48);
+            //通过通道读取数据buffer中
+            int byteReader = inChannel.read(byteBuffer);
+
+            while (byteReader != -1) {
+                //读取的字节数
+                System.out.println("Read:" + byteReader);
+                byteBuffer.flip();
+
+                //一次读取一个字节，知道没有剩余
+				/*
+				while (byteBuffer.hasRemaining()) {
+					System.out.println((char)byteBuffer.get());
+				}*/
+
+                //一次将buffer中的数据全部输出
+                System.out.println(new String(byteBuffer.array()));
+
+                byteBuffer.clear();
+
+                byteReader = inChannel.read(byteBuffer);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                aFile.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void readNIO() {
