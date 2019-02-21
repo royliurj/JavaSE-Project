@@ -21,7 +21,7 @@ public class ProducerConsumerVersion1 {
             } else {
                 //没有生产，则生产
                 i++;
-                System.out.println("P->" + i);
+                System.out.println("P1->" + i);
                 LOCK.notify();
                 isProduced = true;
             }
@@ -32,7 +32,7 @@ public class ProducerConsumerVersion1 {
         synchronized (LOCK) {
             if (isProduced) {
                 //如果生产了，则消费
-                System.out.println("C->" + i);
+                System.out.println("C1->" + i);
                 LOCK.notify();
                 isProduced = false;
             } else {
