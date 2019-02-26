@@ -43,7 +43,7 @@ public class CaptureService {
 
             //通过锁的方式，保证最多只有5个线程一起运行
             synchronized (CONTROLS){
-                while (CONTROLS.size() >= 5){
+                while (CONTROLS.size() >= MAX_WORKER){
                     //线程池中如果已经有5个线程了，则其它线程等待
                     try {
                         CONTROLS.wait();
