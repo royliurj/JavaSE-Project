@@ -31,5 +31,9 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-beans:5.0.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-expression:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib:3.2.10" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant:1.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.10.3" level="project" />
   </component>
 </module>
