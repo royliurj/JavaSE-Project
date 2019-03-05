@@ -3,6 +3,7 @@ package com.roy.javase.concurrent.threadcommunicate;
 import java.util.stream.Stream;
 
 /**
+ * 真正的（多线程）生产者与消费者
  * @Author: Roy
  * @Date: 2019/2/21 9:27
  */

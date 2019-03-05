@@ -1,6 +1,7 @@
 package com.roy.javase.concurrent.threadcommunicate;
 
 /**
+ * 单线程（生产者和消费者均为一个线程）的生产者与消费者
  * @Author: Roy
  * @Date: 2019/2/20 14:41
  */
