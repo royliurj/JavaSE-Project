@@ -13,5 +13,4 @@ public class Main {
         //自动保存
         new ServerThread("SaveThread", data).start();
     }
-
 }
