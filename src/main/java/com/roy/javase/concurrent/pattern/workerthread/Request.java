@@ -20,6 +20,6 @@ public class Request{
 
     @Override
     public String toString() {
-        return "Request -> No.=" + number + " Number=" + number;
+        return "Request -> Name=" + name + " Number=" + number;
     }
 }
