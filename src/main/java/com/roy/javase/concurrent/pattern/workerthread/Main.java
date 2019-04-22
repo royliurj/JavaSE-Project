@@ -9,8 +9,8 @@ public class Main {
         final Channel channel = new Channel(5);
         channel.startWorker();
 
-        new TransportThread("Roy",channel).start();
-        new TransportThread("Jazz",channel).start();
-        new TransportThread("Jack",channel).start();
+        new TransportThread("Roy", channel).start();
+        new TransportThread("Jazz", channel).start();
+        new TransportThread("Jack", channel).start();
     }
 }
