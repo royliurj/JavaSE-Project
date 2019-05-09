@@ -1,7 +1,5 @@
 package com.roy.javase.concurrent.threadapi;
 
-import sun.util.locale.provider.TimeZoneNameUtility;
-
 import java.util.concurrent.TimeUnit;
 
 /**
