@@ -15,7 +15,6 @@ public class Main {
             Class c = diskLoader.loadClass("com.roy.javase.classloader.Test");
 
             System.out.println(c.getClassLoader());
-
             if(c != null){
                 try {
                     Object obj = c.newInstance();
