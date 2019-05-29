@@ -26,19 +26,20 @@ public class UnsafeFooTest {
         System.out.println(simple.get());
     }
 
-    static class Simple{
+    static class Simple {
         private int i = 0;
-        Simple(){
+
+        Simple() {
             i++;
             System.out.println("===Init===");
         }
 
-        public int get(){
+        public int get() {
             return i;
         }
     }
 
-    private static Unsafe getUnsafe(){
+    private static Unsafe getUnsafe() {
         try {
             Field field = Unsafe.class.getDeclaredField("theUnsafe");
             field.setAccessible(true);
