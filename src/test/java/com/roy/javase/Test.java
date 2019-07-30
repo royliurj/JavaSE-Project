@@ -14,9 +14,9 @@
 //
 //@RunWith(SpringRunner.class)
 //@ContextConfiguration
-//public class Test {
+//public class TestRedis {
 //
-//    @org.junit.Test
+//    @org.junit.TestRedis
 //    public void test(){
 //        Employee employee = new Employee();
 //        employee.setId(1);
@@ -39,7 +39,7 @@
 //        System.out.println(employee1);
 //    }
 //
-//    @org.junit.Test
+//    @org.junit.TestRedis
 //    public void test1(){
 //        List<Employee> list = new ArrayList<>();
 //        list.add(new Employee(1,"1","1","1"));
