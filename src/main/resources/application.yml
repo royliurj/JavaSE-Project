@@ -1,3 +1,6 @@
 redis:
   host: 192.168.50.232
   port: 6798
+  poolMaxTotal: 10
+  poolMaxIdle: 10
+  poolMaxWait: 3
