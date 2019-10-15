@@ -13,6 +13,7 @@ public class Test {
     private static String strStatic = "old String";
     private static StringBuilder strBuilderStatic = new StringBuilder("old string builder");
 
+    //dev
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>();
