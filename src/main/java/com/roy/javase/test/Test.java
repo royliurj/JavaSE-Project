@@ -13,24 +13,27 @@ public class Test {
     private static String strStatic = "old String";
     private static StringBuilder strBuilderStatic = new StringBuilder("old string builder");
 
-    //dev 2
+    //dev 23
     public static void main(String[] args) {
 
-        List<String> list = new ArrayList<>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
+        long abc = Long.parseLong("abc");
+        System.out.println(abc);
 
-        ListIterator<String> listIterator = list.listIterator();
-        while (listIterator.hasNext()){
-            String s = listIterator.next();
-            System.out.println(s);
-        }
-        while (listIterator.hasPrevious()){
-            String s = listIterator.previous();
-            System.out.println(s);
-        }
+//        List<String> list = new ArrayList<>();
+//        list.add("1");
+//        list.add("2");
+//        list.add("3");
+//        list.add("4");
+//
+//        ListIterator<String> listIterator = list.listIterator();
+//        while (listIterator.hasNext()){
+//            String s = listIterator.next();
+//            System.out.println(s);
+//        }
+//        while (listIterator.hasPrevious()){
+//            String s = listIterator.previous();
+//            System.out.println(s);
+//        }
 
 //        method(intStatic);
 //        method(strStatic);

@@ -7,6 +7,9 @@ package com.roy.javase.test;
 public class Test2 {
     public static void main(String[] args) {
 
+        long abc = Long.parseLong("abc");
+        System.out.println(abc);
+
         System.out.println(1 << 10);
 
 //        swap();
